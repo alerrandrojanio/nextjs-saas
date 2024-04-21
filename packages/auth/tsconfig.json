@@ -1,0 +1,4 @@
+{
+  "extends": "@nextjs-saas/tsconfig/library.json",
+  "include": ["src/**/*"]
+}

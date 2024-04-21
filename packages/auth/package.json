@@ -1,0 +1,18 @@
+{
+  "name": "@nextjs-saas/auth",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "devDependencies": {
+    "@nextjs-saas/prettier": "workspace:*",
+    "@nextjs-saas/eslint-config": "workspace:*",
+    "@nextjs-saas/tsconfig": "workspace:*"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@nextjs-saas/eslint-config/library"
+    ]
+  },
+  "prettier": "@nextjs-saas/prettier"
+}
