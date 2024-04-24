@@ -1,0 +1,23 @@
+{
+  "name": "@nextjs-saas/api",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@nextjs-saas/auth": "workspace:*"
+  },
+  "devDependencies": {
+    "@nextjs-saas/eslint-config": "workspace:*",
+    "@nextjs-saas/prettier": "workspace:*",
+    "@nextjs-saas/tsconfig": "workspace:*",
+    "@types/node": "^20.12.7",
+    "tsx": "^4.7.2"
+  },
+  "prettier": "@nextjs-saas/prettier",
+  "eslintConfig": {
+    "extends": [
+      "@nextjs-saas/eslint-config/node"
+    ]
+  }
+}
