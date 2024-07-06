@@ -2,16 +2,24 @@
   "name": "@nextjs-saas/api",
   "version": "1.0.0",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/http/server.ts"
   },
   "dependencies": {
-    "@nextjs-saas/auth": "workspace:*"
+    "@fastify/cors": "^9.0.1",
+    "@nextjs-saas/auth": "workspace:*",
+    "@prisma/client": "5.16.1",
+    "bcryptjs": "^2.4.3",
+    "fastify": "^4.28.1",
+    "fastify-type-provider-zod": "^2.0.0",
+    "zod": "^3.23.4"
   },
   "devDependencies": {
     "@nextjs-saas/eslint-config": "workspace:*",
     "@nextjs-saas/prettier": "workspace:*",
     "@nextjs-saas/tsconfig": "workspace:*",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20.12.7",
+    "prisma": "^5.16.1",
     "tsx": "^4.7.2"
   },
   "prettier": "@nextjs-saas/prettier",
