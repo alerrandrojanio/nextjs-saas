@@ -7,3 +7,12 @@ Content-Type: application/json
   "email": "alerrandro@gmail.com",
   "password": "12345678"
 }
+
+###
+POST http://localhost:3333/sessions/password
+Content-Type: application/json
+
+{
+  "email": "alerrandro@email.com",
+  "password": "12345678"
+}
