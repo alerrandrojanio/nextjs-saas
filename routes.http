@@ -4,13 +4,25 @@ Content-Type: application/json
 
 {
   "name": "Alerrandro Janio",
-  "email": "alerrandro@gmail.com",
+  "email": "alerrandro2@gmail.com",
   "password": "12345678"
 }
 
 ###
+# @name authenticate-with-password
 POST http://localhost:3333/sessions/password
 Content-Type: application/json
+
+{
+  "email": "alerrandro@email.com",
+  "password": "12345678"
+}
+
+###
+# @name get-profile
+GET http://localhost:3333/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNWQ1ZGNmOC04ODMwLTRlZWQtYWQ5Ny03ZDRjNmFiYzViOWIiLCJpYXQiOjE3MjkwOTEwMDUsImV4cCI6MTcyOTY5NTgwNX0.wFRXxNgPw_m2busxWCQbHtMZ9KkK9JY5Gt6eO39KEZA
 
 {
   "email": "alerrandro@email.com",
